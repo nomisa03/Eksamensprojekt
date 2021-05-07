@@ -1,16 +1,21 @@
 from tkinter import *
 from tkinter.ttk import *
-from Astar import Spot
+
+#Importer de andre windows
+from Primtal import primtalmenu
 
 class Mainwindow:
     def __init__(self):
         self.root = Tk()
+        
+        self.root.geometry("600x200")
 
         hej = Label(self.root, text="Hej")
-        hej.pack
+        hej.pack(padx = 20, pady = 0, side=LEFT)
+        
+        Prime = Button(self.root, text="primtals menu", command = lambda:primtalmenu(self))
+        Prime.pack(padx = 20, pady = 0, side=LEFT)
 
-        astar = Button(self.root, Text="Astar", command = lambda: Spot(self))
-        astar.pack
 
 
         mainloop()
