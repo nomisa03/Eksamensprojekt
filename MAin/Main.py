@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
-from Astar import main
+from Astar import Spot
 
 class Mainwindow:
     def __init__(self):
@@ -9,8 +9,8 @@ class Mainwindow:
         hej = Label(self.root, text="Hej")
         hej.pack
 
-        Astar = Button(self.root, Text="Astar", COMMAND=lambda: main(self))
-        Astar.pack
+        astar = Button(self.root, Text="Astar", command = lambda: Spot(self))
+        astar.pack
 
 
         mainloop()
