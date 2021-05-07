@@ -188,7 +188,7 @@ def get_clicked_pos(pos, rows, width):
 	return row, col
 
 
-def main(win, width):
+def hest(win, width):
 	ROWS = 50
 	grid = make_grid(ROWS, width)
 
@@ -242,4 +242,4 @@ def main(win, width):
 
 	pygame.quit()
 
-main(WIN, WIDTH)
+#main(WIN, WIDTH)
