@@ -17,6 +17,9 @@ class Mainwindow:
         Prime = Button(self.root, text="primtals menu", command = lambda:primtalmenu(self))
         Prime.pack(padx = 20, pady = 0, side=LEFT)
 
+        fibonaci = Button(self.root, text="primtals menu", command = lambda:Fibonaci(self))
+        fibonaci.pack(padx = 20, pady = 0, side=LEFT)
+
 
 
 
