@@ -12,8 +12,8 @@ class Fibonaci(Frame):
         self.Fibonaccisekvens.geometry("800x200")
         
         Inputfelt = Entry(self.Fibonaccisekvens)
-        Inputfelt.insert(text="skriv et positivt heltal, der er større end 1")
-        Inputfelt.Fibonaccisekvens.pack(padx = 20, pady = 0, side=LEFT)
+        Inputfelt.text="skriv et positivt heltal, der er større end 1"
+        Inputfelt.pack(padx = 20, pady = 0, side=LEFT)
      
 
     def Fibonaccisek(n):
