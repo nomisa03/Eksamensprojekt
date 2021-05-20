@@ -4,20 +4,26 @@ from tkinter.ttk import *
 class Fibonaci(Frame):
     def __init__(self, master):
         self.master = master
-        
-        self.Fibonaccisekvens = Toplevel(self.master.root)
-        
-        self.Fibonaccisekvens.title("List Window")
-        
-        self.Fibonaccisekvens.geometry("800x200")
-        
-        Inputfelt = Entry(self.Fibonaccisekvens)
-        Inputfelt.text="skriv et positivt heltal, der er større end 1"
-        Inputfelt.pack(padx = 20, pady = 0, side=LEFT)
-     
 
-    def Fibonaccisek(n):
-        n = int(input("Skriv antal sekvenser: "))
+        self.Fibonaccisekvens = Toplevel(self.master.root)
+
+        self.Fibonaccisekvens.title("Fibonaci")
+
+        self.Fibonaccisekvens.geometry("800x200")
+
+        self.Fibonaccisek()
+
+
+    def Fibonaccisek(self, n):
+        n = int(Entry(self.Fibonaccisekvens))
+        n.pack(padx=20,pady=0,side=LEFT)
+
+        Knap = Button(self.Fibonaccisekvens,text="Brug Fibonaci metoden",command=self.Fibonacimetode)
+        Knap.pack(padx=20,pady=0,side=RIGHT)
+
+        return n
+
+    def Fibonacimetode(self,n):
         x=0
         y=1
         i=2
@@ -29,6 +35,8 @@ class Fibonaci(Frame):
                 y=x+y
                 i=i+1
         if (i % 2) == 0:
-            print(y)
+            yy = Label(self.Fibonaccisekvens,text=y)
+            yy.pack(padx=30,pady=0,side=BOTTOM)
         else:
-            print(x)
+            xx = Label(self.Fibonaccisekvens,text=x)
+            xx.pack(padx=30,pady=0,side=BOTTOM)
