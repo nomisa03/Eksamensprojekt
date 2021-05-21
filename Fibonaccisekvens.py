@@ -14,8 +14,8 @@ class Fibonaci(Frame):
         self.Fibonaccisek()
 
 
-    def Fibonaccisek(self, n):
-        n = int(Entry(self.Fibonaccisekvens))
+    def Fibonaccisek(self):
+        n = Entry(self.Fibonaccisekvens)
         n.pack(padx=20,pady=0,side=LEFT)
 
         Knap = Button(self.Fibonaccisekvens,text="Brug Fibonaci metoden",command=self.Fibonacimetode)

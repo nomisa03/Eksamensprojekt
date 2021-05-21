@@ -11,7 +11,7 @@ class primtalmenu(Frame):
 
         self.Tal.title("List Window")
 
-        self.Tal.geometry("800x200")
+        self.Tal.geometry("300x150")
 
         self.Create_gadets()
 
@@ -26,8 +26,9 @@ class primtalmenu(Frame):
         Regn = Button(self.Tal, text="Test det", command=self.Regner)
         Regn.pack(padx=40,pady=40,side=BOTTOM)
 
-        n = str(Inputfelt.get())
-        return n
+        global n
+
+        n = int(Inputfelt.get())
 
     def Regner(self, n):
         if n > 1:
