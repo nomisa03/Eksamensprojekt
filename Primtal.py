@@ -20,6 +20,9 @@ class primtalmenu(Frame):
         Inputlabel = Label(self.Tal, text="Skriv et tal der er større end 1")
         Inputlabel.pack(padx = 20, pady = 0, side=TOP)
 
+        Infolabel = Label(self.Tal, text="Skriv HER :)")
+        Infolabel.pack(padx = 20, pady = 0, side=RIGHT)
+
         Inputfelt = Entry(self.Tal)
         Inputfelt.pack(padx = 20, pady = 0, side=LEFT)
 
