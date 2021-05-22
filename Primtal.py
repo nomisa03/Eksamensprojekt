@@ -20,7 +20,7 @@ class primtalmenu(Frame):
         Inputlabel = Label(self.Tal, text="Skriv et tal der er større end 1")
         Inputlabel.pack(padx = 20, pady = 0, side=RIGHT)
 
-        Infolabel = Label(self.Tal, text="Et primtal er et tal, der kun kan deles med sig selv og med 1 - altså 1 og tallet selv er divisorer, så der ikke er nogen rest")
+        Infolabel = Label(self.Tal, text="Et primtal er et tal, der kun kan deles med sig selv og med 1 \n - altså 1 og tallet selv er divisorer, så der ikke er nogen rest")
         Infolabel.pack(padx = 20, pady = 0, side=TOP)
 
         Inputfelt = Entry(self.Tal)
