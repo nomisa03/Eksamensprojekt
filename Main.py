@@ -11,7 +11,7 @@ class Mainwindow:
         
         self.root.geometry("300x150")
 
-        hej = Label(self.root, text="Hej")
+        hej = Label(self.root, text="Velkommen til vores algoritme GUI \nHer kan du vælge imellem de to algoritmer: \ngod fornøjelse:)")
         hej.pack(padx = 20, pady = 0, side=TOP)
         
         Prime = Button(self.root, text="Primtals menu", command = lambda:primtalmenu(self))
