@@ -18,10 +18,10 @@ class primtalmenu(Frame):
     def Create_gadets(self):
 
         Inputlabel = Label(self.Tal, text="Skriv et tal der er større end 1")
-        Inputlabel.pack(padx = 20, pady = 0, side=TOP)
+        Inputlabel.pack(padx = 20, pady = 0, side=RIGHT)
 
-        Infolabel = Label(self.Tal, text="Skriv HER :)")
-        Infolabel.pack(padx = 20, pady = 0, side=RIGHT)
+        Infolabel = Label(self.Tal, text="Et primtal er et tal, der kun kan deles med sig selv og med 1 - altså 1 og tallet selv er divisorer, så der ikke er nogen rest")
+        Infolabel.pack(padx = 20, pady = 0, side=TOP)
 
         Inputfelt = Entry(self.Tal)
         Inputfelt.pack(padx = 20, pady = 0, side=LEFT)
