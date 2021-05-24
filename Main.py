@@ -9,7 +9,7 @@ class Mainwindow:
     def __init__(self):
         self.root = Tk()
         
-        self.root.geometry("300x150")
+        self.root.geometry("260x150")
 
         hej = Label(self.root, text="Velkommen til vores algoritme GUI \nHer kan du vælge imellem de to algoritmer: \ngod fornøjelse:)")
         hej.pack(padx = 20, pady = 0, side=TOP)
