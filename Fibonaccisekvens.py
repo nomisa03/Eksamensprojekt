@@ -1,6 +1,8 @@
+#importere vores udvidelser
 from tkinter import *
 from tkinter.ttk import *
 
+#det samme som i primtal menu
 class Fibonaci(Frame):
     def __init__(self, master):
         self.master = master
@@ -21,9 +23,11 @@ class Fibonaci(Frame):
         Knap = Button(self.Fibonaccisekvens,text="Brug Fibonaci metoden",command=self.Fibonacimetode)
         Knap.pack(padx=20,pady=0,side=RIGHT)
 
+        #her returner vi data så den kommer ud af den her funktion og så en anden funktion kan tage den
         return n
 
     def Fibonacimetode(self,n):
+        #Variablen n bliver så brugt til hvor sekvenser den skal køre.
         x=0
         y=1
         i=2
